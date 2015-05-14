@@ -1,5 +1,5 @@
 Add LoadPath "../Basics".
-Require Import NamingCases.
+Require Export NamingCases.
 
 (** We start with a basic example of induction : proving that
     [n + 0 = n] *)

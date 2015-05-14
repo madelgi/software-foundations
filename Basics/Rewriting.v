@@ -1,3 +1,5 @@
+Require Export EnumTypes.
+
 Module Rewriting.
 
 (** A theorem that states if n=m, then n+n=m+m.

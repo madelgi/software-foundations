@@ -1,6 +1,7 @@
 (********************)
 (* DAYS OF THE WEEK *)
 (********************)
+
 Inductive day : Type :=
    | monday : day
    | tuesday : day

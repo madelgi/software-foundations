@@ -1,7 +1,7 @@
 (** Makes the files in this folder in scope *)
 Add LoadPath "../Basics".
 
-Require Import EnumTypes.
+Require Export CaseAnalysis.
 Require String. Open Scope string_scope.
 
 (** This stuff creates a way to specify cases (e.g. "suppose b=true")
@@ -64,5 +64,3 @@ Proof.
       SCase "b = false".
          reflexivity.
    Qed.
-
-

@@ -1,4 +1,4 @@
-Require Import EnumTypes.
+Require Export Rewriting.
 
 (** Some thms require more than a simple calculation. In general, unknown
     values (such as arbitrary nums, bools, lists, etc) can block a

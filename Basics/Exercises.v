@@ -1,4 +1,4 @@
-Require Import EnumTypes.
+Require Export CaseAnalysis.
 
 (** EXERCISE [**]: Prove the following theorem about
     boolean functions *)
@@ -23,7 +23,10 @@ Theorem andb_eq_orb : forall (b c : bool),
    b = c.
 
 Proof.
-   Admitted.
+   intros b c. intro H. destruct b. destruct c.
+      reflexivity.
+      simpl in H. rewrite -> H. reflexivity.
+      simpl in H. rewrite -> H. reflexivity. Qed.
 
 (** EXERCISE [***]: Develop a binary system for natural numbers *)
 
